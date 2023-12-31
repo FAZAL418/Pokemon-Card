@@ -66,7 +66,95 @@ export default function App() {
     moves: ['Confusion', 'Psychic', 'Barrier', 'Swift'],
     weaknesses: ['Bug', 'Dark', 'Ghost'],
   };
-
+  const machampData = {
+    name: 'Machamp',
+    image: require('./assets/machamp.jpeg'),
+    type: 'Fighting',
+    hp: 90,
+    moves: ['Karate Chop', 'Cross Chop', 'Seismic Toss', 'Bulk Up'],
+    weaknesses: ['Psychic', 'Flying'],
+  };
+  
+  const laprasData = {
+    image: require('./assets/lapras.jpeg'),
+    name: 'Lapras',
+    type: 'Water',
+    hp: 130,
+    moves: ['Surf', 'Ice Beam', 'Hydro Pump', 'Sing'],
+    weaknesses: ['Electric', 'Grass', 'Fighting', 'Rock'],
+  };
+  
+  const alakazamData = {
+    name: 'Alakazam',
+    image: require('./assets/alakazam.png'),
+    type: 'Psychic',
+    hp: 55,
+    moves: ['Psychic', 'Future Sight', 'Calm Mind', 'Recover'],
+    weaknesses: ['Bug', 'Ghost', 'Dark'],
+  };
+  
+  const aerodactylData = {
+    name: 'Aerodactyl',
+    image: require('./assets/Aerodactyl.jpeg'),
+    type: 'Rock',
+    hp: 80,
+    moves: ['Rock Slide', 'Fly', 'Ancient Power', 'Crunch'],
+    weaknesses: ['Water', 'Electric', 'Ice', 'Steel'],
+  };
+  
+  const gyaradosData = {
+    name: 'Gyarados',
+    image: require('./assets/Gyarados.jpeg'),
+    type: 'Water',
+    hp: 95,
+    moves: ['Hydro Pump', 'Dragon Dance', 'Bite', 'Twister'],
+    weaknesses: ['Electric', 'Rock'],
+  };
+  
+  const jolteonData = {
+    name: 'Jolteon',
+    image: require('./assets/Jolteon.png'),
+    type: 'Electric',
+    hp: 65,
+    moves: ['Thunderbolt', 'Thunder Wave', 'Quick Attack', 'Pin Missile'],
+    weaknesses: ['Ground'],
+  };
+  
+  const dragoniteData = {
+    name: 'Dragonite',
+    image: require('./assets/dragonite.jpeg'),
+    type: 'Dragon',
+    hp: 91,
+    moves: ['Dragon Breath', 'Dragon Claw', 'Thunder Wave', 'Fly'],
+    weaknesses: ['Dragon', 'Ice', 'Fairy'],
+  };
+  
+  const machopData = {
+    name: 'Machop',
+    image: require('./assets/Machop.jpeg'),
+    type: 'Fighting',
+    hp: 70,
+    moves: ['Low Kick', 'Karate Chop', 'Seismic Toss', 'Focus Energy'],
+    weaknesses: ['Psychic', 'Flying'],
+  };
+  
+  const flareonData = {
+    name: 'Flareon',
+    image: require('./assets/Flareon.png'),
+    type: 'Fire',
+    hp: 65,
+    moves: ['Fire Blast', 'Flamethrower', 'Quick Attack', 'Smog'],
+    weaknesses: ['Water', 'Rock'],
+  };
+  
+  const vaporeonData = {
+    name: 'Vaporeon',
+    image: require('./assets/Vaporeon.jpeg'),
+    type: 'Water',
+    hp: 130,
+    moves: ['Hydro Pump', 'Aurora Beam', 'Quick Attack', 'Water Gun'],
+    weaknesses: ['Electric', 'Grass'],
+  };
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -77,6 +165,16 @@ export default function App() {
         <PokemonCard {...jigglypuffData} />
         <PokemonCard {...eeveeData} />
         <PokemonCard {...mewtwoData} />
+        <PokemonCard {...machampData} />
+        <PokemonCard {...laprasData} />
+        <PokemonCard {...alakazamData} />
+        <PokemonCard {...aerodactylData} />
+        <PokemonCard {...gyaradosData} />
+        <PokemonCard {...jolteonData} />
+        <PokemonCard {...dragoniteData} />
+        <PokemonCard {...machopData} />
+        <PokemonCard {...flareonData} />
+        <PokemonCard {...vaporeonData} />
       </ScrollView>
     </SafeAreaView>
   );

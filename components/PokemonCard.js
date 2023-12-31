@@ -1,25 +1,34 @@
 import { View, Text, StyleSheet, Image } from "react-native";
-
 const getTypeDetails = (type) => {
-    switch (type.toLowerCase()) {
-      case 'electric':
-        return { backgroundColor: '#FFD700', emoji: '⚡️' };
-      case 'water':
-        return { backgroundColor: '#6493EA', emoji: '💧' };
-      case 'fire':
-        return { backgroundColor: '#FF5733', emoji: '🔥' };
-      case 'grass':
-        return { backgroundColor: '#66CC66', emoji: '🌿' };
-      case 'normal':
-        return { backgroundColor: '#A9A9A9', emoji: '⚪' }; 
-      case 'psychic':
-        return { backgroundColor: '#FF69B4', emoji: '🔮' }; 
-      case 'fairy':
-        return { backgroundColor: '#8B4513', emoji: '🧚‍♀️' }; 
-      default:
-        return { backgroundColor: '#A0A0A0', emoji: '❓' };
-    }
-  };
+  switch (type.toLowerCase()) {
+    case 'electric':
+      return { backgroundColor: '#FFD700', emoji: '⚡️' };
+    case 'water':
+      return { backgroundColor: '#6493EA', emoji: '💧' };
+    case 'fire':
+      return { backgroundColor: '#FF5733', emoji: '🔥' };
+    case 'grass':
+      return { backgroundColor: '#66CC66', emoji: '🌿' };
+    case 'normal':
+      return { backgroundColor: '#A9A9A9', emoji: '⚪' };
+    case 'psychic':
+      return { backgroundColor: '#FF69B4', emoji: '🔮' };
+    case 'fairy':
+      return { backgroundColor: '#8B4513', emoji: '🧚‍♀️' };
+    case 'ghost':
+      return { backgroundColor: '#6C6C6C', emoji: '👻' };
+    case 'rock':
+      return { backgroundColor: '#A0522D', emoji: '🪨' };
+    case 'dragon':
+      return { backgroundColor: '#7038F8', emoji: '🐉' };
+    case 'fighting':
+      return { backgroundColor: '#C03028', emoji: '🥊' };
+    case 'ice':
+      return { backgroundColor: '#98D8D8', emoji: '❄️' };
+    default:
+      return { backgroundColor: '#A0A0A0', emoji: '❓' };
+  }
+};
 
 export default function PokemonCard({
   name,
